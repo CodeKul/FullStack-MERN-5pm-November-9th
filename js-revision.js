@@ -25,10 +25,29 @@ console.log(student)
 
 
 if (true) {
-    const city="Pune";
+    let city="pune";
     city="Mumbai"
-    console.log("City :", city)
+    console.log(city);
+
+ 
+   
+
+   
+   
 }
+
+function xyz(){
+    var pet;
+    pet = "cat";
+
+  
+}
+
+console.log(pet)
+
+xyz()
+
+console.log("City :", city)
 
 
 
