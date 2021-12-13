@@ -17,6 +17,10 @@ let num1 = 50
 let num2 = 60
 
 
+console.log(false || !true)
+
+console.log(num1<="50" && num1>=60)
+
 console.log(num1)
 
 console.log(++num1);
