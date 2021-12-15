@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="">Marks 1</label>
+    <input id="s1" type="text" />
+
+    <label for="">Marks 2</label>
+    <input id="s2" type="text" />
+    <button type="button" onclick="calculate()">submit</button>
+
+    <div id="displayResult">
+
+    </div>
+
+    <script>
+      function calculate() {
+        let subject1 = document.getElementById("s1").value;
+        let subject2 = document.getElementById("s2").value;
+        // console.log(subject1)}
+        let total = parseInt(subject1) + parseInt(subject2);
+        console.log("total :", total);
+
+        document.getElementById("displayResult").innerHTML = "Total :" + total 
+      }
+    </script>
+  </body>
+</html>
