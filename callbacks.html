@@ -35,6 +35,23 @@
 
       displayMessage(displayNumber())
 
+      function One(a, callback1){
+        console.log("a:", a)
+        callback1(three)
+      }
+
+      function Two(three){
+        console.log("Second Function")
+        three()
+      }
+
+      function three(){
+        console.log("Third Function")
+      }
+
+
+      One(10, Two)
+
       //   function fetchData() {}
     </script>
   </body>
