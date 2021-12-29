@@ -1,15 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        let array = new Array(100)
-        console.log(array)
+      let array = new Array(10);
+      console.log(array);
+
+      let cities = [
+        "pune",
+        90,
+        "delhi",
+        "banglore",
+        { name: "sanket", designation: "SWE" },
+      ];
+      console.log(cities);
+
+      // let cities = ["pune", "mumbai", "delhi", "banglore"]
+
+      let numbers = [10, 20, 30, 40, 50, 60];
+      console.log(numbers);
+
+      numbers.push(110, 222, 333, { company: "Eazebuzz", city: "Pune" });
+
+      console.log(numbers);
+      numbers.pop();
+
+      console.log(numbers);
+
+      let data = [
+        { productName: "iPhone", price: 100000 },
+        { productName: "Redmi ", price: 16000 },
+        { productName: "One Plus", price: 40000 },
+        
+        { productName: "Vivo", price: 20000 },
+        { productName: "Oppo", price: 8000 },
+        { productName: "Samsung", price: 200000 },
+        { productName: "Lenovo", price: 30000 },
+        { productName: "Nokia", price: 50000 },
+        { productName: "Blackberry", price: 150000 },
+        { productName: "Asus", price: 18000 },
+      ];
+
+      console.log(data);
+     let filteredData = data.filter((element) => {
+        if (element.price > 100000) return element;
+      });
+
+      console.log(filteredData)
+
+      console.log(data.find((element)=>{
+        if (element.price > 100000) return element;
+      }))
     </script>
-</body>
+  </body>
 </html>
