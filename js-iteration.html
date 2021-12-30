@@ -10,12 +10,40 @@
     <script>
       let numbers = [10, 20, 30, 40, 50];
 
-      
+      // console.log(numbers.map((a) => {
+      //   a += 5;
+      //   return a
+      // }))
 
-      console.log(numbers.map((a) => {
-        a += 5;
-        return a
-      }))
+      // console.log(numbers[2])
+
+      // for (let i = 0; i < numbers.length; i++) {
+      //   numbers[i] += 5;
+
+      //   console.log(numbers);
+      // }
+
+      // console.log(numbers.forEach((a)=>{
+      //   a += 5;
+      //  console.log(a)
+      // }))
+
+      for (let item of numbers) {
+        item += 5;
+       console.log(item)
+      }
+
+
+      let person = {
+            name: "Sanket",
+            city: "Pune",
+            designation: "SWE"
+        }
+
+
+      for (let key in person) {
+       console.log(`${key} has value ${person[key]}`)
+      }
     </script>
   </body>
 </html>
