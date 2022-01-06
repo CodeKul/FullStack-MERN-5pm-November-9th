@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+
+let numbers = [10, 20, 30, 40, 50]
+
+let userDetails = {
+    fname: "Sanket",
+    city: "Pune",
+    mobile: 7385393346,
+    designation: "SWE",
+    skills: ["Javascript", "CSS", "React", "Java", "SpringBoot"]
+}
+
+for(let item in userDetails){
+console.log(`${item} has value ${userDetails[item]}`)
+}
+
+      for (let i = 0; i < numbers.length; i++) {
+        console.log("Hi", numbers[i]);
+      }
+
+
+      for (let i = 0; i < userDetails; i++) {
+        console.log("Hi", );
+      }
+
+      numbers.forEach((item)=>{
+        console.log("Hi", item);
+      })
+
+      numbers.map((item)=>{
+        console.log("Hi", item);
+      })
+
+    //   for-of and for-in
+    // for-of iterating over array.
+    // for-in iterating over object properties
+
+  for(let item of numbers){
+    console.log("Hi", item);
+  }
+    </script>
+  </body>
+</html>
