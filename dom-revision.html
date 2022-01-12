@@ -11,16 +11,66 @@
 
     <button onclick="displayData()">Display Data</button>
 
+    <button onclick="addParagraph()">Create Paragraph</button>
 
-    <button>Create Form</button>
+    <button onclick="addForm()">Create Form</button>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse velit rerum
+      quos modi perspiciatis odit minus iste saepe, vitae rem distinctio ullam
+      corrupti ut sed id explicabo eius eos quibusdam?
+    </p>
+
+    <button>Remove Paragraph</button>
 
     <script>
+      // append() and appendChild()
 
-        // codevolution react series
-        // var, let and const keywords
+      // appendChild syntax
+      // parentElement.appendChild(childElement)
+      let body = document.body;
+
+      function addParagraph() {
+        let paragrapgh = document.createElement("p");
+        console.log(paragrapgh);
+
+        body.appendChild(paragrapgh);
+
+        //let content = "Hello, Welcome to JS magic...!"
+
+        // paragrapgh.append(content)
+
+        paragrapgh.innerHTML = "Hello, Welcome to JS magic...!";
+
+        //  document.write("Hello Aliens")
+      }
+
+      // codevolution react series
+      // var, let and const keywords
+
+      // difference between innerText and innerHTML
       function displayData() {
         let fname = document.getElementById("inputdata").value;
         console.log(fname);
+      }
+
+      function addForm() {
+        let form = document.createElement("form");
+        body.appendChild(form);
+        console.log(form);
+
+        // form.innerHTML = "<input type='text'/>"
+
+        let fname = document.createElement("input");
+
+        console.log(fname);
+
+        fname.setAttribute("type", "text");
+        // fname.style.border="solid red 2px"
+
+        fname.setAttribute("style", "border:solid red 2px");
+
+        form.append(fname);
       }
     </script>
   </body>
