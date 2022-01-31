@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Dashboard from './components/Dashboard';
 import UserProvider from './components/UserContext';
 import Main from './components/Main';
+import TopNav from './components/TopNav';
 
 
 // https://blog.logrocket.com/react-context-api-deep-dive-examples/
@@ -20,6 +21,8 @@ function App() {
      <UserProvider>
 <Dashboard/>
 <Main/>
+
+<TopNav/>
      </UserProvider>
     </div>
   );
