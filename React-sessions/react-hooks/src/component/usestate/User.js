@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Codekul from './Codekul';
 
 export default function User() {
     const [userInfo, setUserInfo] = useState({
@@ -7,7 +8,11 @@ export default function User() {
         designation: ""
     })
 
-    console.log(userInfo)
+    // const [userInfo, setUserInfo] = useState(5)
+
+
+    // setUserInfo(true)
+    // console.log(userInfo)
 
 
     const handleInput = (e) => {
@@ -35,6 +40,8 @@ export default function User() {
 
             <button onClick={handleInput}>Submit</button>
         </form>
+
+        <Codekul/>
 
 
     </div>;

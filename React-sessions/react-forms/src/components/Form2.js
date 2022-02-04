@@ -12,11 +12,19 @@ export default function Form2() {
         city: ""
     })
 
-
+    let newData = {
+        fname: "Sanket",
+        email: "sb@gmail.com",
+        password: "123456",
+        gender: "male",
+        isActive: false,
+        city: "pune"
+    }
 
     const handleInput = (event) => {
         setInput({
-            ...input, [event.target.name]: event.target.type === "checkbox" ? event.target.checked : event.target.value
+            // ...input, [event.target.name]: event.target.type === "checkbox" ? event.target.checked : event.target.value
+            ...input, ...newData
         })
         console.log(input)
     }

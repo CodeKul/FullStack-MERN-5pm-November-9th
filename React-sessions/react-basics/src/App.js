@@ -6,6 +6,8 @@ import HelloMessage from './components/HelloMessage';
 
 
 // what is the diff between not defined and undefined
+
+// https://www.freecodecamp.org/news/build-youtube-with-react/
 function App() {
   return (
     <div className="App">
