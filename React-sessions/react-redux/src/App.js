@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Bank from './components/Bank';
 
 
 // Types of Redux -
@@ -9,10 +10,12 @@ import './App.css';
 // 4. Redux-Thunk 
 // 5. Redux-Saga
 
+// how to connect component to store ?
+
 function App() {
   return (
     <div className="App">
-     
+     <Bank/>
     </div>
   );
 }
